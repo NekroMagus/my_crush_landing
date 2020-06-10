@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(180deg, #0B349E 0%, #082571 100%) no-repeat;
+}
+
+.left-circle {
+  position: fixed;
+  background: url(../img/left_circle.svg) no-repeat fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+.logo {
+  position: fixed;
+  background: url(../img/logo.svg) no-repeat;
+  width: 410px;
+  height: 395px;
+  top: 57px;
+  left: 66px;
+}
+
+.peoples {
+  position: fixed;
+  background: url(../img/itog.png) no-repeat;
+  width: 100%;
+  height: 100%;
+  top: 204px;
+}
+
+.title {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100px;
+  line-height: 102px;
+  color: #fff;
+}
