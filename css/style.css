@@ -25,26 +25,437 @@ body {
 
 .logo {
   position: fixed;
-  background: url(../img/logo.svg) no-repeat;
   width: 410px;
   height: 395px;
-  top: 57px;
-  left: 66px;
+  top: 10px;
+  left: 9%;
 }
 
 .peoples {
   position: fixed;
-  background: url(../img/itog.png) no-repeat;
+  top: 130px;
+  left: 6%;
+}
+
+.peoples img {
   width: 100%;
   height: 100%;
-  top: 204px;
+  min-width: 700px;
+  min-height: 700px;
+  max-width: 1000px;
+  max-width: 1000px;
 }
 
 .title {
+  position: fixed;
   font-family: 'Object Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 100px;
   line-height: 102px;
   color: #fff;
+  left: 740px;
+  top:170px;
+  white-space: nowrap;
+}
+
+
+.email {
+  position: fixed;
+  display: flex;
+  margin-left: 748px;
+  margin-top: 320px;
+}
+
+.email input {
+  color:white;
+  background-color: rgba(255,255,255,0.1);
+  outline:0 none !important;
+  border: none;
+  border-radius: 16px;
+  padding-left: 10px;
+  width: 540px;
+  height: 50px;
+}
+
+.email button {
+  width: 50px;
+  background-color: rgba(255,255,255,0.000001);
+  outline:0 none !important;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border: none;
+  margin-left: -50px;
+}
+
+.description {
+  position: fixed;
+  font-size: 24px;
+  line-height: 25px;
+  color: #FFFFFF;
+  margin-left: 748px;
+  margin-top: 380px;
+}
+
+.networks {
+   position: fixed;
+   display: flex;
+   top: 850px;
+   left:87%;
+}
+
+.networks button {
+   border: none;
+   outline:0 none !important;
+   width: 41px;
+   height: 41px;
+   margin-right: 30px;
+   background: rgba(255, 255, 255, 0.2);
+   border-radius: 57px;
+}
+
+.networks img {
+   margin-left: -2px;
+   margin-top: 2px;
+}
+
+/* width */
+
+@media (max-width: 1400px) {
+   
+   .networks {
+    left:80%;
+   }
+}
+
+@media (max-width: 1320px) {
+   .email {
+      margin-left: 700px;
+   }
+   .title {
+    left:700px;
+   }
+   .description {
+    margin-left: 703px;
+   }
+   .networks {
+    left:75%;
+   }
+}
+
+
+@media (max-width: 1280px) {
+   .title {
+     font-size: 80px;
+   }
+
+    .logo {
+      left:6%;
+    }
+    .peoples {
+      left:1%;
+    }
+
+  .email {
+      margin-left: 650px;
+      margin-top: 300px;
+   }
+   .title {
+    left:650px;
+   }
+   .description {
+    margin-left: 653px;
+    margin-top: 350px;
+   }
+}
+
+@media (max-width: 1220px) {
+   .email {
+      margin-left: 620px;
+   }
+   .title {
+      left:620px;
+    }
+   .description {
+      margin-left: 623px;
+   }
+}
+
+@media (max-width: 1185px) {
+    .email input {
+      width: 500px;
+    }
+    .description {
+      font-size: 22px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .title {
+      font-size: 70px;
+    }
+    .email input {
+      width: 460px;
+    }
+    .description {
+      font-size: 20px;
+    }
+}
+
+@media (max-width: 1115px) {
+    .title {
+      font-size: 60px;
+    }
+    .email {
+      width: 420px;
+      margin-top: 280px;
+
+    }
+    .description {
+      font-size: 18px;
+      margin-top: 330px;
+    }
+}
+
+
+@media (max-width: 1060px) {
+    .email {
+      width: 380px;
+    }
+}
+
+@media (max-width: 1020px) {
+    .email {
+      width: 340px;
+    }
+}
+
+@media (max-width: 985px) {
+    .title {
+      left: 580px;
+    }
+    .email {
+      margin-left: 580px;
+
+    }
+    .description {
+      margin-left: 583px;
+    }
+    .networks {
+     left:75%;
+   }
+}
+
+@media (max-width: 950px) {
+    .logo {
+      left:1%;
+    }
+
+    .logo img {
+       width: 350px;
+       height: 350px;
+    }
+
+    .peoples img {
+      width: 600px;
+      height: 600px;
+      min-width: 650px;
+      min-height: 650px;
+    }
+
+    .title {
+      font-size: 50px;
+      left: 460px;
+    }
+    .email {
+      margin-left: 460px;
+
+    }
+    .description {
+      margin-left: 463px;
+    }
+}
+
+@media (max-width: 815px) {
+
+    .email input {
+      width: 280px;
+    }
+    .networks {
+     left:70%;
+   }
+}
+
+@media (max-width: 770px) {
+
+    .logo {
+       left: 5%;
+    }
+
+    .peoples {
+       left:4%;
+    }
+
+    .logo img {
+       width: 300px;
+       height: 300px;
+    }
+
+    .peoples img {
+      width: 550px;
+      height: 550px;
+      min-width: 550px;
+      min-height: 550px;
+    }
+
+    .title {
+      left: 420px;
+    }
+    .email {
+      margin-left: 420px;
+
+    }
+    .description {
+      margin-left: 423px;
+    }
+}
+
+@media (max-width: 720px) {
+
+    .logo {
+       left: 8%;
+    }
+
+    .peoples {
+       left:7%;
+    }
+
+    .logo img {
+       width: 250px;
+       height: 250px;
+       min-width: 250px;
+       min-height: 250px;
+    }
+
+    .peoples img {
+      width: 450px;
+      height: 450px;
+      min-width: 450px;
+      min-height: 450px;
+    }
+
+    .title {
+      font-size: 40px;
+      left: 80px;
+      top:550px;
+    }
+    .email {
+      margin-left: 80px;
+      top:360px;
+    }
+    .description {
+      margin-left: 80px;
+      top:373px;
+    }
+}
+
+@media (max-width: 630px) {
+    .networks {
+      left:65%;
+   }
+}
+
+@media (max-width: 550px) {
+    .networks {
+      left:55%;
+   }
+}
+
+@media (max-width: 375px) {
+    .networks {
+      left:47%;
+   }
+
+   .networks button {
+     width: 35px;
+     height: 35px;
+   }
+   
+   .title {
+      left: 50px;
+    }
+    .email {
+      margin-left: 50px;
+    }
+    .description {
+      margin-left: 50px;
+    }
+
+}
+
+@media (max-width: 345px) {
+   .logo {
+       left: 6%;
+    }
+
+    .peoples {
+       left:5%;
+    }
+   
+   .title {
+      left: 40px;
+    }
+    .email {
+      margin-left: 40px;
+    }
+    .description {
+      margin-left: 40px;
+    }
+
+}
+
+@media (max-width: 340px) {
+   .logo {
+       left: 5%;
+    }
+
+    .peoples {
+       left:4%;
+    }
+   
+   .title {
+      left: 20px;
+    }
+    .email {
+      margin-left: 20px;
+    }
+    .description {
+      margin-left: 20px;
+    }
+
+    .networks {
+      left:42%;
+    }
+
+}
+
+
+/* height */
+
+@media (max-height: 870px) {
+   .peoples {
+     height: 90%; 
+   }
+   .networks {
+     top:800px;
+   }
+}
+
+@media (max-height: 770px) {
+   .peoples {
+    top: 110px; 
+   }
+   .networks {
+     top:850px;
+   }
 }
