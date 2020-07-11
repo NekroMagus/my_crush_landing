@@ -118,6 +118,12 @@ body {
    margin-top: 2px;
 }
 
+#instagram img {
+  width: 22px;
+  height: 22px;
+  opacity: 0.8;
+}
+
 /* width */
 
 @media (max-width: 1400px) {
@@ -479,7 +485,7 @@ body {
     }
 }
 
-@media (max-width: 325px) and (max-height: 770px) {
+@media (max-width: 720px) and (max-height: 770px) {
    .email {
       top:38%;
    }
@@ -488,7 +494,7 @@ body {
    }
 }
 
-@media (max-width: 325px) and (max-height: 750px) {
+@media (max-width: 720px) and (max-height: 750px) {
    .peoples {
      left:4%;
    }
@@ -507,7 +513,7 @@ body {
    }
 }
 
-@media (max-width: 325px) and (max-height: 735px) {
+@media (max-width: 720px) and (max-height: 735px) {
    .peoples {
      top:12%;
    }
@@ -532,13 +538,13 @@ body {
     }
 }
 
-@media (max-width: 325px) and (max-height: 740px) {
+@media (max-width: 720px) and (max-height: 740px) {
      .description {
         top:35%;
      }
 }
 
-@media (max-width: 325px) and (max-height: 720px) {
+@media (max-width: 720px) and (max-height: 720px) {
      .email {
         top:37%;
      }
@@ -547,7 +553,7 @@ body {
      }
 }
 
-@media (max-width: 325px) and (max-height: 690px) {
+@media (max-width: 720px) and (max-height: 690px) {
      .email {
         top:32%;
      }
@@ -572,7 +578,7 @@ body {
 }
 
 
-@media (max-width: 325px) and (max-height: 710px) {
+@media (max-width: 720px) and (max-height: 710px) {
      .logo img {
         width: 220px;
         height: 220px;
@@ -587,7 +593,7 @@ body {
      }
 }
 
-@media (max-width: 325px) and (max-height: 670px) {
+@media (max-width: 720px) and (max-height: 670px) {
      .email {
         top:30%;
      }
@@ -614,7 +620,7 @@ body {
      }
 }
 
-@media (max-width: 325px) and (max-height: 650px) {
+@media (max-width: 720px) and (max-height: 650px) {
      .email {
         top:190px;
      }
