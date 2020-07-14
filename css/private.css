@@ -29,8 +29,8 @@ th, td {
 
 th, td, .text {
   font-weight: normal;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 1.5em;
+  line-height: 1.8em;
 }
 
 .td-double:first-child {
@@ -83,4 +83,18 @@ th, td, .text {
 
 .bold {
   font-weight: 900;
+}
+
+@media screen and (max-width: 768px) {
+
+  .logo {
+    height: 47px;
+    width: 46px;
+  }
+
+  th, td, .text {
+    font-weight: normal;
+    font-size: 2em;
+    line-height: 2em;
+  }
 }
