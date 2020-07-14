@@ -19,7 +19,7 @@ body {
 
 .left-circle {
   position: fixed;
-  background: url(../img/left_circle.svg) no-repeat fixed 0 0px;
+  left: -300px;
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -49,7 +49,7 @@ body {
   position: fixed;
   top: 150px;
   left: 60px;
-  height: 800px;
+  height: 85%;
   object-fit: cover;
 }
 
