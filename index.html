@@ -1,37 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>My Crush</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-  <title>My crush</title>
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-<div class="flex">
-  <img class="left-circle" src="img/left_circle.svg"/>
-  <div class="logo">
-    <img src="./img/logo.svg">
+<div class="container">
+  <div class="images">
+    <div class="images__heart"><img src="img/heart.svg" alt="Сердечко"></div>
+    <div class="images__phones"><img src="img/phones.png" alt="Наши пользователи"></div>
   </div>
-  <div class="peoples">
-    <img src="./img/itog.png">
-  </div>
+  <main>
+    <section class="about"><h1 class="about__title">My crush</h1>
+      <form action="#" class="about__form">
+        <input name="email" type="email" placeholder="Подпишитесь на новости для большей информации"/>
+        <button class="about__submit"></button>
+      </form>
+      <p class="about__text">Какое-то небольшое предложение о приложении для воодушевления потенциального
+        пользователя.</p>
+      <a href="https://play.google.com/store/apps/details?id=com.date.mycrush" target="_blank" class="about__download">
+        <img src="img/download.png" alt="Скачать приложение в Google Play"/>
+      </a>
+      <div class="about__mobile"><a href="https://play.google.com/store/apps/details?id=com.date.mycrush"
+                                    target="_blank" class="about__download-mobile">
+        <img src="img/download.png" alt="Скачать приложение в Google Play"/></a>
+        <div class="about__mobile-content">
+          <div class="about__heart"><img src="img/heart.svg" alt="Сердечко"></div>
+          <h2 class="about__title-mobile">My crush</h2></div>
+      </div>
+    </section>
+  </main>
 </div>
-<div class="right-circle"></div>
-
-<!--<div class="title">My crush</div>-->
-<!--<div class="email">-->
-<!--    <input type="email" placeholder="Введите email">-->
-<!--    <button><img src="./img/Vector.svg"></button>-->
-<!--</div>                -->
-<!--<div class="description"><p>Какое-то небольшое предложение о приложении для<br>-->
-<!--воодушевления потенциального пользователя.</p></div>-->
-
-
-<!--<div class="networks">-->
-<!--	<button id="facebook"><img src=""></button>-->
-<!--	<button id="instagram"><img src=""></button>-->
-<!--	<button id="vk"><img src=""></button>-->
-<!--</div>-->
+<footer class="footer">
+  <a href="html/private_policy.html" class="footer__politic">Политика конфиденциальности</a>
+  <a href="#" class="footer__icon"><img
+      src="icons/facebook.svg" alt="Фейсбук"> </a><a href="#" class="footer__icon footer__icon_ml20"><img
+      src="icons/instagram.svg" alt="Инстаграм"> </a><a href="#"
+                                                        class="footer__icon footer__icon_big footer__icon_ml20"><img
+      src="icons/vk.svg" alt="Вконтакте"></a></footer>
 </body>
 </html>
