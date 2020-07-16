@@ -1,0 +1,467 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Object Sans"
+}
+
+.container {
+    margin-left: 70px;
+    display: flex;
+    justify-content: space-between
+}
+
+body {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background: url(../img/bg-img.jpg) bottom left/cover no-repeat
+}
+
+.images {
+    position: relative;
+    height: 100vh
+}
+
+.images__heart {
+    width: 38vh;
+    position: absolute;
+    top: 9vh;
+    z-index: 1
+}
+
+.images__heart img {
+    width: 100%
+}
+
+.images__phones {
+    width: 39vh;
+    position: absolute;
+    top: 26vh;
+    left: 7vh;
+    z-index: 2
+}
+
+.images__phones img {
+    width: 100%
+}
+
+.about {
+    width: 660px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-right: 14vh;
+    padding-top: 23vh
+}
+
+.about__mobile {
+    display: none
+}
+
+.about__heart {
+    width: 68px;
+    height: 68px;
+    border-radius: 15px;
+    background-color: #0b349e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -2px 4px 4px rgba(199, 241, 255, .78), 0 -2px 4px rgba(199, 241, 255, .25)
+}
+
+.about__heart img {
+    width: 80%
+}
+
+.about__title {
+    color: #fff;
+    font-size: 100px;
+    font-weight: 400;
+    margin: 0 0 17px 0
+}
+
+.about__form {
+    position: relative
+}
+
+.about__form input {
+    width: 90%;
+    padding: 17px 20px;
+    border-radius: 16px;
+    border: 2px solid rgba(255, 255, 255, .1);
+    background-color: rgba(255, 255, 255, .1);
+    outline: 0;
+    color: #fff;
+    caret-color: #fd6008;
+    font-size: 18px;
+    font-weight: 400
+}
+
+.about__form input::-moz-placeholder {
+    color: rgba(225, 225, 225, .7)
+}
+
+.about__form input:-ms-input-placeholder {
+    color: rgba(225, 225, 225, .7)
+}
+
+.about__form input::-ms-input-placeholder {
+    color: rgba(225, 225, 225, .7)
+}
+
+.about__form input::placeholder {
+    color: rgba(225, 225, 225, .7)
+}
+
+.about__submit {
+    width: 30px;
+    height: 18px;
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+    color: #fff;
+    cursor: pointer;
+    background-color: transparent;
+    background: url(../icons/button.svg) center center/cover no-repeat;
+    border: none
+}
+
+.about__text {
+    margin-top: 40px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400
+}
+
+.about__download {
+    display: block;
+    width: 23.5vh;
+    margin-top: 44px
+}
+
+.about__download img {
+    width: 100%
+}
+
+.about__download-mobile {
+    display: block;
+    width: 23.5vh;
+    padding-bottom: 3%
+}
+
+.about__download-mobile img {
+    width: 100%
+}
+
+.footer {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center
+}
+
+.footer__politic {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 40px
+}
+
+.footer__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .2)
+}
+
+.footer__icon img {
+    width: 50%
+}
+
+.footer__icon_big img {
+    width: 70%
+}
+
+.footer__icon_ml20 {
+    margin-left: 20px
+}
+
+@media (max-width: 1400px) {
+    .container {
+        margin-left: 40px
+    }
+}
+
+@media (max-width: 1300px) {
+    .about {
+        margin-right: 3.5vh
+    }
+}
+
+@media (max-width: 1200px) {
+    .about {
+        margin-right: 3vh
+    }
+
+    .images__heart {
+        width: 35vh
+    }
+
+    .images__phones {
+        width: 34vh
+    }
+}
+
+@media (min-width: 1041px) and (max-width: 1080px) {
+    .about {
+        width: 580px
+    }
+}
+
+@media (min-width: 1010px) and (max-width: 1040px) {
+    .about {
+        width: 580px;
+        margin-right: 1vh
+    }
+
+    .about__text {
+        font-size: 23px
+    }
+
+    .images__heart {
+        width: 25vh;
+        top: 15vh
+    }
+
+    .images__phones {
+        width: 25vh;
+        left: 4vh
+    }
+
+    .container {
+        margin-left: 5px
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        margin-left: 10px
+    }
+
+    .images__heart {
+        width: 23vh;
+        top: 20vh
+    }
+
+    .images__phones {
+        width: 22vh;
+        top: 32vh;
+        left: 5vh
+    }
+
+    .about {
+        width: 425px;
+        padding-top: 5vh
+    }
+
+    .about__title {
+        font-size: 93px
+    }
+
+    .about__text {
+        font-size: 20px
+    }
+
+    .about__download {
+        margin-top: 30px
+    }
+}
+
+@media (min-width: 769px) and (max-width: 850px) {
+    .about {
+        padding-top: 3vh
+    }
+
+    .about__title {
+        font-size: 75px
+    }
+
+    .about__text {
+        margin-top: 10px;
+        font-size: 16px
+    }
+
+    .about__download {
+        width: 29.5vh;
+        margin-top: 28px
+    }
+
+    .footer {
+        bottom: 20px
+    }
+
+    .images__phones {
+        width: 35vh;
+        top: 30vh;
+        left: 7vh
+    }
+
+    .images__heart {
+        width: 35vh;
+        top: 13vh
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        overflow-y: visible;
+        height: unset;
+        min-height: 100vh
+    }
+
+    .container {
+        flex: 1 1 auto
+    }
+
+    .container {
+        width: 78.4%;
+        margin: 0 auto
+    }
+
+    .about {
+        padding-bottom: 80px;
+        padding-top: 30px;
+        width: 100%
+    }
+
+    .about__download {
+        display: none
+    }
+
+    .about__title {
+        display: none
+    }
+
+    .about__mobile {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top: 65vw;
+        order: 4
+    }
+
+    .about__download-mobile {
+        width: 202px
+    }
+
+    .about__title-mobile {
+        font-size: 15px;
+        margin-top: 10px;
+        color: #fff
+    }
+
+    .about__form {
+        width: 100%;
+        order: 1;
+        font-size: 10px;
+        margin-bottom: 20px
+    }
+
+    .about__form input {
+        padding: 10px 20px
+    }
+
+    .about__text {
+        order: 2;
+        font-size: 14px;
+        margin: 0;
+        padding: 0 5px
+    }
+
+    .images {
+        height: 0
+    }
+
+    .images__phones {
+        order: 3;
+        top: 140px;
+        width: 35vw;
+        left: 0;
+        transform: translateX(60%)
+    }
+
+    .images__heart {
+        display: none
+    }
+
+    .footer {
+        width: 230px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        right: unset;
+        left: unset;
+        position: relative
+    }
+
+    .footer__icon {
+        order: 7
+    }
+
+    .footer__politic {
+        order: 8;
+        margin: 20px 0 0 0
+    }
+}
+
+@media (max-width: 590px) {
+    .about__submit {
+        right: 20px
+    }
+
+    .about__mobile {
+        margin-top: 83vw
+    }
+
+    .about__download-mobile {
+        width: 175px
+    }
+
+    .footer {
+        margin: 0 auto;
+        right: unset;
+        bottom: 20px
+    }
+
+    .images__phones {
+        top: 155px;
+        width: 43vw;
+        transform: translateX(45%)
+    }
+}
+
+@media (max-width: 355px) {
+    .about__download-mobile {
+        width: 180px
+    }
+}
+
+@media (max-width: 340px) {
+    .about__text {
+        font-size: 13px
+    }
+
+    .about__download-mobile {
+        width: 140px
+    }
+}
