@@ -3,10 +3,6 @@ body {
   font-family: "Object Sans", serif ;
 }
 
-table {
-  width: 100%;
-}
-
 th, td {
   padding-top: 5px;
   padding-bottom: 40px;
@@ -20,7 +16,13 @@ th, td, .text {
   font-size: 1.5em;
   line-height: 1.8em;
 }
-
+td {
+  padding-right: 20px;
+}
+a {
+  text-overflow:  ellipsis;
+  max-width: 100%;
+}
 .td-double:first-child {
   width: 30%;
   padding-right: 60px;
@@ -32,7 +34,16 @@ th, td, .text {
 }
 
 .container {
-  margin: 52px 58px 28px 49px;
+  /* margin: 52px 58px 28px 49px; */
+  width: 90%;
+  padding: 50px 0 28px 0;
+  margin: 0 auto;
+  /* width: 100%; */
+}
+.container__table {
+  max-width: 100%;
+  height: auto;
+  overflow-y: auto;
 }
 
 .logo {
@@ -74,25 +85,55 @@ th, td, .text {
 }
 
 @media screen and (max-width: 768px) {
-
+  a {
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .support {
+    display: inline;
+  }
   .logo {
     height: 47px;
     width: 46px;
+    top: 100px;
+  }
+  .no_lh {
+    line-height: unset;
+    padding-top: 16px
   }
 
   th, td, .text {
     font-weight: normal;
-    font-size: 2em;
+    font-size: 1.5em;
     line-height: 2em;
   }
-
   .main-title {
-    font-size: 4em;
+    font-size: 2em;
     line-height: 4em;
   }
 
   .point-title {
-    font-size: 2.5em;
-    line-height: 2.5em;
+    font-size: 2em;
+    line-height: 1.5em;
+  }
+
+  table {
+    width: 800px;
+  }
+
+  .text {
+    overflow: hidden;
+    text-align: justify;
+  }
+  p {
+    text-overflow: ellipsis;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  table {
+    width: 600px;
   }
 }
