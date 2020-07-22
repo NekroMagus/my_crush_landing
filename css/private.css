@@ -112,16 +112,16 @@ a {
 
   th, td, .text {
     font-weight: normal;
-    font-size: 1.5em;
+    font-size: 1.25em;
     line-height: 2em;
   }
   .main-title {
-    font-size: 1.7em;
+    font-size: 1.5em;
     line-height: 1.5em;
   }
 
   .point-title {
-    font-size: 1.5em;
+    font-size: 1.35em;
     line-height: 1.5em;
   }
 
@@ -132,6 +132,7 @@ a {
   .text {
     overflow: hidden;
     text-align: justify;
+    font-size: 1.25em;
   }
   p {
     text-overflow: ellipsis;
@@ -141,5 +142,8 @@ a {
 @media screen and (max-width: 570px) {
   table {
     width: 600px;
+  }
+  .text {
+    font-size: 1em;
   }
 }
