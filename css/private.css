@@ -3,12 +3,18 @@ body {
   font-family: "Object Sans", serif ;
 }
 
+table {
+  border-collapse: collapse;
+}
+
 th, td {
   padding-top: 5px;
   padding-bottom: 40px;
+  padding-left: 10px;
   text-align: left;
   color: #121212;
   vertical-align: top;
+  border: 2px solid black;
 }
 
 th, td, .text {
