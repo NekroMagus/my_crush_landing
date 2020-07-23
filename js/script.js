@@ -1,13 +1,16 @@
-function changePlaceholder() {
-    const input = document.querySelector("#mail");
-    window.addEventListener('resize', function(){
-        if (window.innerWidth < 995) {
-            input.setAttribute('placeholder', 'Подпишитесь на новости');
-        } 
-        else {
-            input.setAttribute('placeholder', 'Подпишитесь на новости для большей информации');
-        }
-    });
-}
+window.addEventListener('load', function () {
+    // 1-ый запуск.
+    foo();
 
-changePlaceholder();
+    window.addEventListener('resize', foo);
+});
+
+function foo() {
+    let input = document.querySelector("#mail");
+
+    if (window.innerWidth < 995) {
+        input.setAttribute('placeholder', 'Подпишитесь на новости');
+    } else {
+        input.setAttribute('placeholder', 'Подпишитесь на новости для большей информации');
+    }
+}

@@ -1,7 +1,8 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: "Object Sans"
+    font-family: "Object Sans";
+    box-sizing: border-box;
 }
 
 .container {
@@ -85,8 +86,9 @@ body {
 }
 
 .about__form input {
-    width: 90%;
+    width: 96%;
     padding: 17px 20px;
+    padding-right: 60px;
     border-radius: 16px;
     border: 2px solid rgba(255, 255, 255, .1);
     background-color: rgba(255, 255, 255, .1);
@@ -378,7 +380,9 @@ body {
     }
 
     .about__form input {
-        padding: 10px 20px
+        width: 100%;
+        padding: 10px 20px;
+        padding-right: 85px;
     }
 
     .about__text {
@@ -434,6 +438,11 @@ body {
         margin-top: 83vw
     }
 
+    .about__form input {
+        padding-right: 65px;
+        font-size: 15px;
+    }
+
     .about__download-mobile {
         width: 175px
     }
@@ -448,6 +457,12 @@ body {
         top: 155px;
         width: 43vw;
         transform: translateX(45%)
+    }
+}
+@media (max-width: 375px) {
+    .about__form input {
+        font-size: 13px;
+        padding-right: 55px;
     }
 }
 
